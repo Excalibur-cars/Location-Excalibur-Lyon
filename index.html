@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location de voitures anciennes et de collection - Excalibur</title>
+    <meta name="description" content="Spécialiste de la location de voitures anciennes et de collection Excalibur. Louez une voiture de prestige pour mariage, événement, balade ou tournage. Découvrez notre flotte de véhicules de collection et réservez en ligne." />
+    <meta name="keywords" content="location voitures anciennes, location voiture de collection, location Excalibur, mariage voiture ancienne, événement voiture de collection, véhicules de prestige, voitures rétro, voitures classiques, louer voiture ancienne" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Location de voitures anciennes et de collection Excalibur</h1>
+            <p class="slogan">L’élégance Art Déco, la puissance américaine</p>
+            <nav>
+                <a href="#vehicules">Véhicules</a>
+                <a href="#reservation">Réservation</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h2>Louez une voiture de collection d’exception</h2>
+            <p>
+                Découvrez notre flotte exclusive de véhicules Excalibur, symboles du luxe néo-classique et de l’esprit des années folles. Offrez-vous une expérience unique pour votre mariage, un événement, un tournage ou une balade inoubliable à bord d’une voiture ancienne de prestige.
+            </p>
+        </div>
+    </section>
+    <section id="vehicules" class="vehicules-section">
+        <div class="container">
+            <h2>Nos voitures anciennes à louer</h2>
+            <div class="vehicules-grid">
+                <div class="vehicule-card">
+                    <img src="images/excalibur1.jpg" alt="Location Excalibur Série IV Anniversaire, voiture ancienne de collection" class="clickable-img">
+                    <h3>Excalibur Série IV Anniversaire</h3>
+                    <ul>
+                        <li>Moteur V8 5.0L Chevrolet</li>
+                        <li>150 ch</li>
+                        <li>4 places</li>
+                        <li>Carrosserie blanche et grise</li>
+                        <li>Intérieur cuir blanc & gris</li>
+                        <li>Année 1984</li>
+                    </ul>
+                </div>
+                <div class="vehicule-card">
+                    <img src="images/excalibur2.jpg" alt="Location Excalibur Série IV Phaeton Vanille Chocolat, voiture de collection" class="clickable-img">
+                    <h3>Excalibur Série IV Phaeton Vanille/Chocolat</h3>
+                    <ul>
+                        <li>Moteur V8 5.7L Chevrolet</li>
+                        <li>200 ch</li>
+                        <li>4 places</li>
+                        <li>Carrosserie vanille et chocolat</li>
+                        <li>Intérieur cuir tan</li>
+                        <li>Année 1982</li>
+                    </ul>
+                </div>
+                <div class="vehicule-card">
+                    <img src="images/excalibur3.jpg" alt="Location Excalibur Série IV Phaeton Ivoire, voiture ancienne" class="clickable-img">
+                    <h3>Excalibur Série IV Phaeton Ivoire</h3>
+                    <ul>
+                        <li>Moteur V8 5.0L Chevrolet</li>
+                        <li>200 ch</li>
+                        <li>4 places</li>
+                        <li>Carrosserie ivoire</li>
+                        <li>Intérieur cuir tan</li>
+                        <li>Année 1982</li>
+                    </ul>
+                </div>
+                <div class="vehicule-card">
+                    <img src="images/excalibur4.jpg" alt="Location Excalibur Série III Phaeton Nougat, voiture de collection" class="clickable-img">
+                    <h3>Excalibur Série III Phaeton Nougat</h3>
+                    <ul>
+                        <li>Moteur V8 7.4L</li>
+                        <li>150 ch</li>
+                        <li>4 places</li>
+                        <li>Carrosserie nougat</li>
+                        <li>Intérieur cuir tan</li>
+                        <li>Année 1978</li>
+                    </ul>
+                </div>
+                <div class="vehicule-card">
+                    <img src="images/excalibur5.jpg" alt="Location Excalibur Série III Phaeton Blanche, voiture ancienne" class="clickable-img">
+                    <h3>Excalibur Série III Phaeton Blanche</h3>
+                    <ul>
+                        <li>Moteur V8 7.4L</li>
+                        <li>150 ch</li>
+                        <li>4 places</li>
+                        <li>Carrosserie blanche</li>
+                        <li>Intérieur cuir tan</li>
+                        <li>Année 1979</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="reservation" class="reservation-section">
+        <div class="container">
+            <h2>Réserver une voiture ancienne de collection</h2>
+            <form action="https://formspree.io/f/xovdbylr" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <label for="modele">Modèle souhaité</label>
+                <select id="modele" name="Modèle">
+                    <option>Série IV Anniversaire</option>
+                    <option>Série IV Phaeton Vanille/Chocolat</option>
+                    <option>Série IV Phaeton Ivoire</option>
+                    <option>Série III Phaeton Nougat</option>
+                    <option>Série III Phaeton Blanche</option>
+                </select>
+                <label for="date">Date de location</label>
+                <input type="date" id="date" name="Date" required>
+                <label for="organisation">Description de votre organisation</label>
+                <textarea id="organisation" name="Description de l'organisation" rows="3" placeholder="Décrivez brièvement l'organisation de votre événement : horaires, lieux, de manière à ce que nous puissions vous faire une proposition précise"></textarea>
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="Nom" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="Email" required>
+                <button type="submit">Envoyer la demande</button>
+            </form>
+        </div>
+    </section>
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h2>Questions fréquentes sur la location de voitures anciennes</h2>
+            <dl>
+                <dt>Pour quels événements puis-je louer une voiture ancienne ?</dt>
+                <dd>Nos véhicules de collection sont parfaits pour les mariages, anniversaires, événements professionnels, tournages, séances photo ou balades de prestige.</dd>
+                <dt>Les voitures sont-elles disponibles avec chauffeur ?</dt>
+                <dd>Oui, Nous sommes une société de VTC et le chauffeur est inclus dans la prestation</dd>
+                <dt>Comment réserver une voiture de collection ?</dt>
+                <dd>Il suffit de remplir le formulaire de réservation en ligne, nous vous recontacterons rapidement.</dd>
+                <dt>Les véhicules sont-ils assurés ?</dt>
+                <dd>Tous nos véhicules de collection sont assurés pour la location événementielle.</dd>
+            </dl>
+        </div>
+    </section>
+    <footer id="contact">
+        <div class="container">
+            <p>© 2025 Location Excalibur. Tous droits réservés.</p>
+            <p>Contact : <a href="mailto:excalibur42000@gmail.com" style="color:inherit;">excalibur42000@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <!-- Lightbox pour affichage plein écran -->
+    <div id="lightbox" class="lightbox" style="display:none;">
+      <span class="close-lightbox" id="closeLightbox">&times;</span>
+      <img class="lightbox-content" id="lightboxImg" src="" alt="">
+      <div id="lightboxCaption" class="lightbox-caption"></div>
+    </div>
+
+    <script>
+    document.querySelectorAll('.clickable-img').forEach(function(img) {
+        img.addEventListener('click', function() {
+            document.getElementById('lightboxImg').src = this.src;
+            document.getElementById('lightboxImg').alt = this.alt;
+            document.getElementById('lightboxCaption').textContent = this.alt;
+            document.getElementById('lightbox').style.display = 'flex';
+        });
+    });
+
+    document.getElementById('closeLightbox').onclick = function() {
+        document.getElementById('lightbox').style.display = 'none';
+        document.getElementById('lightboxImg').src = '';
+    };
+
+    document.getElementById('lightbox').onclick = function(e) {
+        if (e.target === this) {
+            this.style.display = 'none';
+            document.getElementById('lightboxImg').src = '';
+        }
+    };
+    </script>
+</body>
+</html>
